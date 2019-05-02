@@ -1,6 +1,6 @@
 <?php
 /*
- * 注文
+ * 注文情報入力確認
  */
 include("../lib/common.php");
 
