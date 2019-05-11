@@ -13,29 +13,28 @@ $(function(){
 </script>
 </head>
 <body>
-<h1><?php echo $name ?>｜商品詳細</h1>
+<h1 style="display:block;background:#ccc;font-weight:bold;width:500px;"><?php echo $name ?>｜商品詳細</h1>
 <p><a href="/">商品一覧へ戻る</a>
-<table border="1">
+<table style="border:1px solid #333;width:500px;">
 	<tr>
-		<th>写真</th>
-		<td><img src="/upload/items/<?php echo $photo ?>" width="300"></td>
+		<th style="border:1px solid #333;width:200px;background:#eee;">写真</th>
+		<td style="border:1px solid #333;width:300px;"><img src="/upload/items/<?php echo $photo ?>" width="300"></td>
 	</tr>
 	<tr>
-		<th>商品名</th>
-		<td><?php echo $name ?></td>
+		<th style="border:1px solid #333;width:200px;background:#eee;">商品名</th>
+		<td style="border:1px solid #333;width:300px;"><?php echo $name ?></td>
 	</tr>
 	<tr>
-		<th>商品説明</th>
-		<td><?php echo nl2br($description) ?></td>
+		<th style="border:1px solid #333;width:200px;background:#eee;">商品説明</th>
+		<td style="border:1px solid #333;width:300px;"><?php echo nl2br($description) ?></td>
 	</tr>
 	<tr>
-		<th>価格</th>
-		<td><?php echo number_format($price) ?>円</td>
-	</tr>
-	<tr>
-		<th></th>
-		<td><input type="button" value="注文する" id="btn_order"></td>
+		<th style="border:1px solid #333;width:200px;background:#eee;">価格</th>
+		<td style="border:1px solid #333;width:300px;"><?php echo number_format($price) ?>円</td>
 	</tr>
 </table>
+<div style="width:500px;text-align:center;">
+	<input type="button" value="注文する" id="btn_order">
+</div>
 </body>
 </html>
